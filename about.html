@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gema's Dolls</title>
     <link rel="stylesheet" href="dolls.css">
-
 </head>
 <body>
     <header>
@@ -28,47 +27,58 @@
                 </ul>
             </li>
             <li><a href="clothing.html">Clothing</a></li>
-            <li><a href="dollcare.html"class="active">Doll Care</a></li>
-            <li><a href="about.html" >About</a></li>
+            <li><a href="dollcare.html">Doll Care</a></li>
+            <li><a href="about.html" class="active">About</a></li>
         </ul>
     </nav>
-    </nav>
-    <!-- anadir secciones  -->
-  
 
-        <p id="dollCareParagraph">Hey there, doll enthusiasts! Ready to dive into some doll care fun? Here's the scoop on keeping your doll pals in tip-top shape:
+    <div class="card-cont">
+        
+             <div class="card">
 
-            Gentle Touch: Treat your doll like royalty - they love a gentle touch! Avoid rough play and handle with care to keep those precious parts intact.
-            
-            Fresh Air Adventures: Time for a little outdoor adventure! Take your doll for a stroll in the sunshine, but watch out for rain - dolls aren't fans of getting wet!
-            
-            Fashionista Feels: Let's talk fashion! Keep those stylish outfits clean and fresh by giving them a gentle wash now and then. Who said dolls can't rock a wardrobe change?
-            
-            Cozy Bedtime Rituals: Sweet dreams are made of cozy beds! Make sure your doll has a comfy spot to rest their head at night - they'll thank you for it with smiles in the morning.
-            
-            Magic Wipe-Away: Oops, a little mess? No worries! Grab a damp cloth and gently wipe away any dirt or dust. Voila, good as new!
-            
-            Remember, a little love and care go a long way in doll world. So go ahead, sprinkle some magic and watch your doll companions shine! </p>
-        <!-- tips and tricks -->
-        <div class="card-cont">
-            
-        <div class="card">
-        <iframe src="https://www.youtube.com/embed/_URAeKnZbi0" frameborder="5" allowfullscreen></iframe>
+            <h2>About Us</h2>
+            <div id="about-content">
+                <p>We pride ourselves on being artisans of doll-making, with years of experience and a passion for creating exquisite pieces that enchant and delight. Our dedication to quality craftsmanship ensures that each doll is meticulously handcrafted with attention to detail, resulting in unique and extraordinary creations. We believe in ethical practices, sourcing only the finest materials and prioritizing sustainability in our production process. With a commitment to excellence and a love for our craft, we invite you to explore our collection and experience the magic of Gema's Dolls firsthand.
+                </p>
+                <img src="https://cdn.midjourney.com/aec49e0a-9084-46b2-b262-d6d5368abce2/0_0.webp" alt="US">
+            </div>
+
         </div>
+
+    
+    <div class="card">
         
-        <div class="card">
-        <!-- video 2 -->
-        <iframe src="https://www.youtube.com/embed/5SkgDDIdu8U" frameborder="5" allowfullscreen></iframe>
+        <form>
+        <label for="myFName">*First Name:</label>
+        <input type="text" name="myFName" id="myFName" required>
+        <label for="myLName">*Last Name:</label>
+        <input type="text" name="myLName" id="myLName" required>
+        <label for="myEmail">*E-mail:</label>
+        <input type="text" name="myEmail" id="myEmail" required>
+        <label for="myAddress">*Address:</label>
+        <input type="text" name="myAddress" id="myAddress" >
+        <label for="myCity">*City:</label>
+        <input type="text" name="myCity" id="myCity" >
+        <label for="myState">*State:</label>
+        <input type="text" name="myState" id="myState" minlength="2" maxlength="2">
+        <label for="myZip">*Zip Code:</label>
+        <input type="text" name="myZip" id="myZip" minlength="5" maxlength="10">
+        <label for="myPhone">Phone:</label>
+        <input type="text" name="myPhone" id="myPhone" minlength="10" maxlength="10">
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+        <input type="submit" value="Submit">
+        <div class="contact-info">
+            <p><a href="mailto:info@gemasdolls.com">Email: info@gemasdolls.com</a></p>
+            <p>Phone: 123-456-7890</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=ivy+tech+Community,+college">Address: 123 Doll Street, Toyland</a></p>
         </div>
-        
-        <div class="card">
-        <!-- video 3-->
-        <iframe src="https://www.youtube.com/embed/PTpHtvIkO5Q" frameborder="5" allowfullscreen></iframe>
-        </div>
-            
-        </div>
-  
+        </form>
+    </div>
+    </div>
+        </main>
 </body>
+
 <footer>
     <p>&copy;  <a href="start.html">2024 Gema's Dolls. </a>All rights reserved.</p>
 </footer>
