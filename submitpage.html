@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+</head>
+<body>
+    <h2>Thank you for submitting the form!</h2>
+    <p>We will be in contact with you soon.</p>
+
+    <script>
+        // Retrieve form data from the URL query string
+        const urlParams = new URLSearchParams(window.location.search);
+        const firstName = urlParams.get('myFName');
+        const lastName = urlParams.get('myLName');
+        const email = urlParams.get('myEmail');
+        const address = urlParams.get('myAddress');
+        const city = urlParams.get('myCity');
+        const state = urlParams.get('myState');
+        const zipCode = urlParams.get('myZip');
+        const phone = urlParams.get('myPhone');
+        const message = urlParams.get('message');
+
+        // Display the form data
+        document.write("<h3>Submitted Form Data:</h3>");
+        document.write("<p>First Name: " + firstName + "</p>");
+        document.write("<p>Last Name: " + lastName + "</p>");
+        document.write("<p>Email: " + email + "</p>");
+        document.write("<p>Address: " + address + "</p>");
+        document.write("<p>City: " + city + "</p>");
+        document.write("<p>State: " + state + "</p>");
+        document.write("<p>Zip Code: " + zipCode + "</p>");
+        document.write("<p>Phone: " + phone + "</p>");
+        document.write("<p>Message: " + message + "</p>");
+    </script>
+</body>
+</html>
