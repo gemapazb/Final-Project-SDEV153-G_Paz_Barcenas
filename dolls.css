@@ -4,7 +4,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    padding: 10;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -120,8 +123,6 @@ nav li:hover .submenu {
     margin: auto; /* Add margin around each card */
     text-align: center;
     font-family: arial;
-    /*display: inline-block; /* Display cards inline */
-    /*vertical-align: top; /* Align cards to the top of the container */
     position: relative;
     padding: 20px;
 
@@ -129,13 +130,39 @@ nav li:hover .submenu {
 
 .card-cont{
     display: flex;
-    justify-content: center;
+    justify-content: space-around; /* Adjust the spacing between cards */
+    margin-top: 20px; /* Add margin to separate the sections */
 }
 
 .card-cont-a{
     display: flex;
     justify-content: center;
     position: relative;
+}
+
+.doll-table {
+  width: 70%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.doll-table th, .doll-table td {
+  padding: 8px;
+  border: 1px solid #dddddd;
+  text-align: center;
+}
+
+.doll-table th {
+  background-color: #f2f2f2;
+}
+
+.doll-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.doll-table tbody tr:hover {
+  background-color: #f2f2f2;
+  
 }
 
 
@@ -187,28 +214,26 @@ nav li:hover .submenu {
     padding: 0 20px; /* Add some padding to the sides of the paragraph */
 
 }
-.about-section{
-    width: 50%;
-    box-sizing: border-box;
-    float: left;
-    padding: 0 20px; /* Add padding to separate the sections */
-}
+
 #about-content p {
     line-height: 2.6; /* Adjust the line height for the paragraph */
     text-align: center; /* Center the text within the container */
+    
 
 }
 
 #about img {
-    max-width: 70%; /* Adjust the maximum width of the image */
+    max-width: 100%; /* Adjust the maximum width of the image */
     display: block; /* Ensure the image is a block element */
     margin: 0 auto 20px; /* Center the image horizontally and add some bottom margin */
 }
 .contact-container {
-    margin-top: 20px; /* Add margin to create space between sections */
+    flex: 0 0 30%; /* Adjust width of form section */
+    margin-bottom: 20px;
 }
 .about-section {
-    float: left; /* Float the about section to the left */
+    flex: 0  80%; /* Adjust width of about section */
+    margin-right: 60px;
 }
 
 .contact-section {
@@ -222,7 +247,7 @@ nav li:hover .submenu {
     display: table;
 }
 #dollCareParagraph {
-    font-size: 18px; /* Increase the font size for better readability */
+    font-size: 20px; /* Increase the font size for better readability */
     line-height: 2.6; /* Add some line spacing to prevent the text from looking too cramped */
     margin-bottom: 20px; /* Add some margin at the bottom to create space between paragraphs */
     margin: 60px; /* Add margin on all sides of the paragraph */
@@ -276,11 +301,16 @@ button.next {
     right: 0;
 }
 
- footer {
-            background-color: #f2f2f2;
-            padding: 10px;
-            text-align: center;
-        }
+
+footer {    
+    margin-top: auto; /* Pushes the footer to the bottom */
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    width: 100%; /* Ensure footer spans the entire width */
+    position: sticky; /* Ensure footer remains at the bottom */
+    bottom: 0;
+}
 
 #wrapper { 
     margin-left: auto;
@@ -288,7 +318,7 @@ button.next {
     background-color: #FFFFFF;
 }
 
-main { 
+ main { 
     padding-left: 2em;
     padding-right: 2em;
     display: block;
@@ -308,8 +338,7 @@ main {
 
 /* Style the form container */
 form {
-    max-width: 800px;
-    /*margin: 10px;*/
+    max-width: 1800px;
     padding: 15px;
     border: 2px solid #ccc;
     border-radius: 5px;
